@@ -1,0 +1,175 @@
+/* ======== ROOT COLORS ======== */
+:root {
+    --bg-dark: #0b0b0b;
+    --bg-light: #ffffff;
+    --text-dark: #ffffff;
+    --text-light: #111111;
+    --card-dark: #111111;
+    --card-light: #f2f2f2;
+    --primary: #3fe300;
+}
+
+/* ======== RESET ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+    transition: 0.3s ease;
+}
+
+/* ======== NAV ======== */
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.nav-container {
+    width: 90%;
+    background: #111;
+    border-radius: 10px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.nav-icons a {
+    color: #ccc;
+    font-size: 21px;
+    margin-left: 20px;
+}
+
+/* ======== HERO SECTION ======== */
+.hero {
+    width: 90%;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-left {
+    width: 55%;
+}
+
+.hero-left h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.cta-btn {
+    background: var(--primary);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    box-shadow: 0 0 18px rgba(63, 227, 0, 0.6);
+    transition: 0.2s;
+}
+
+.cta-btn:hover {
+    transform: scale(1.03);
+}
+
+.worked-with {
+    margin-top: 10px;
+    color: #aaa;
+}
+
+.brands {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.brand-box {
+    border: 1px solid #222;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background: #0f0f0f;
+    color: #777;
+    font-weight: 600;
+}
+
+/* ======== RIGHT IMAGE ======== */
+.hero-right img {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #222;
+}
+
+/* ======== DARK/LIGHT MODE ======== */
+body.light {
+    background: var(--bg-light);
+    color: var(--text-light);
+}
+
+body.light .nav-container {
+    background: #eaeaea;
+}
+
+body.light .nav-links a,
+body.light .nav-icons a {
+    color: #333;
+}
+
+body.light .brand-box {
+    background: #fff;
+    border-color: #ddd;
+    color: #444;
+}
+
+body.light .cta-btn {
+    background: #3fe300;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+    }
+
+    .brands {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
