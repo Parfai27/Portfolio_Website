@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch – Mugwaneza Parfait</title>
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Global + Page CSS -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/get-in-touch.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a class="active" href="contact.html">Get In Touch</a></li>
+        </ul>
+
+        <div class="social">
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+            <a href="#"><i class="ri-behance-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+        </div>
+
+        <div class="theme-toggle" onclick="toggleMode()">
+            <i class="ri-sun-line" id="sun"></i>
+            <i class="ri-moon-line" id="moon"></i>
+        </div>
+
+        <i class="ri-menu-line menu-toggle"></i>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <span class="close-menu">&times;</span>
+
+        <a href="index.html">Home</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="blog.html">Blog</a>
+        <a class="active" href="contact.html">Get In Touch</a>
+
+        <div class="mobile-socials">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-behance"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+
+
+    <!-- HEADER -->
+    <header class="contact-header">
+        <h1>Let’s Work Together</h1>
+        <p>
+            Whether you have a project idea, need UI/UX, development, or want to collaborate — 
+            I’m here to help. Fill out the form below and I will respond shortly.
+        </p>
+    </header>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+
+        <div class="contact-details">
+            <h2>Contact Details</h2>
+
+            <p><i class="ri-mail-line"></i> parfaitmugwaneza@gmail.com</p>
+            <p><i class="ri-phone-line"></i> +250 780 000 000</p>
+            <p><i class="ri-map-pin-line"></i> Kigali, Rwanda</p>
+
+            <div class="contact-social">
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                <a href="#"><i class="ri-behance-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+            </div>
+        </div>
+
+
+        <form class="contact-form">
+            <h2>Send a Message</h2>
+
+            <div class="input-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Your Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Message</label>
+                <textarea placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Send Message <i class="ri-send-plane-line"></i>
+            </button>
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Mugwaneza Parfait. All Rights Reserved.</p>
+    </footer>
+
+    <script defer src="assets/js/global.js"></script>
+    <script src="assets/js/get-in-touch.js"></script>
+</body>
+</html>

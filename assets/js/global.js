@@ -16,3 +16,18 @@ themeToggle?.addEventListener("click", () => {
         localStorage.setItem("theme", "light");
     }
 });
+
+// Mobile Menu Toggle
+const openMenu = document.querySelector(".menu-toggle");
+const closeMenu = document.querySelector(".close-menu");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+if (openMenu && closeMenu && mobileMenu) {
+    openMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("show");
+    });
+
+    closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.remove("show");
+    });
+}

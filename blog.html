@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog – Mugwaneza Parfait</title>
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Get In Touch</a></li>
+    </ul>
+
+    <div class="social">
+        <a href="#"><i class="ri-linkedin-fill"></i></a>
+        <a href="#"><i class="ri-behance-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+    </div>
+
+    <div class="theme-toggle" onclick="toggleMode()">
+        <i class="ri-sun-line" id="sun"></i>
+        <i class="ri-moon-line" id="moon"></i>
+    </div>
+
+    <i class="ri-menu-line menu-toggle"></i>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <span class="close-menu">&times;</span>
+
+    <a href="index.html">Home</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Get In Touch</a>
+
+    <div class="mobile-socials">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-behance"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="blog-header">
+    <h1>Insights & Articles</h1>
+    <p>Sharing knowledge on software engineering, design, and real-world development lessons.</p>
+</header>
+
+<!-- ================= FEATURED POST ================= -->
+<section class="featured-post">
+    <img src="assets/images/blog.png" alt="Featured Image">
+
+    <div class="featured-content">
+        <h2>Modern UI/UX Principles Every Developer Should Know</h2>
+        <p>In this article, we explore what makes digital products feel intuitive, smooth, and engaging—backed by real project examples.</p>
+
+        <a href="#" class="read-btn" data-blog="featured">Read More <i class="ri-arrow-right-line"></i></a>
+    </div>
+</section>
+
+<!-- ================= BLOG GRID ================= -->
+<section class="blog-grid">
+
+    <div class="blog-card">
+        <img src="https://via.placeholder.com/500x350" alt="">
+        <h3>How I Built a Full Employee Attendance System</h3>
+        <p>A breakdown of the architecture, database structure, CRUD logic, and Swing UI integration.</p>
+        <a href="#" class="read-more" data-blog="attendance-system">Read More</a>
+    </div>
+
+    <div class="blog-card">
+        <img src="https://via.placeholder.com/500x350" alt="">
+        <h3>Designing a Smart Medical Inventory Tracker</h3>
+        <p>The challenges of building a healthcare-oriented system for rural clinics and the UX decisions behind it.</p>
+        <a href="#" class="read-more" data-blog="medical-inventory">Read More</a>
+    </div>
+
+    <div class="blog-card">
+        <img src="https://via.placeholder.com/500x350" alt="">
+        <h3>Deploying a Django App With an ML Model</h3>
+        <p>A complete guide to implementing and deploying ML inference inside a web application.</p>
+        <a href="#" class="read-more" data-blog="django-ml">Read More</a>
+    </div>
+
+</section>
+
+<!-- BLOG OVERLAY MODAL -->
+<div class="blog-overlay" id="blogOverlay">
+    <div class="blog-overlay-content">
+        <span class="close-overlay">&times;</span>
+        <div class="blog-overlay-body" id="blogOverlayBody">
+            <!-- Content will be populated by JavaScript -->
+        </div>
+    </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2025 Mugwaneza Parfait. All Rights Reserved.</p>
+    <div class="social">
+        <i class="ri-linkedin-fill"></i>
+        <i class="ri-behance-fill"></i>
+        <i class="ri-twitter-fill"></i>
+    </div>
+</footer>
+
+<script src="assets/js/global.js"></script>
+<script src="assets/js/blog.js"></script>
+</body>
+</html>

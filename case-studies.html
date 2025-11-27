@@ -21,9 +21,9 @@
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a class="active" href="case-studies.html">Case Studies</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Recent Work</a></li>
-        <li><a href="#">Get In Touch</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Get In Touch</a></li>
     </ul>
 
     <div class="social">
@@ -39,6 +39,22 @@
     </div>
 </nav>
 
+
+<div class="mobile-menu" id="mobileMenu">
+    <span class="close-menu">&times;</span>
+
+    <a href="index.html">Home</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Get In Touch</a>
+
+    <div class="mobile-socials">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-behance"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+</div>
 
 
 
@@ -58,7 +74,7 @@
             <h2>Smart Medical Inventory Tracker</h2>
             <p>A lightweight system for rural clinics to track medicine stock levels and receive low-stock alerts.</p>
 
-            <a href="smart-medical-inventory.html" class="view-btn">
+            <a href="#" class="view-btn" data-case="smart-medical">
                 View Case Study <i class="ri-arrow-right-line"></i>
             </a>
         </div>
@@ -69,24 +85,34 @@
             <h2>Employee Attendance System</h2>
             <p>A full Java Swing + PostgreSQL attendance management platform with full CRUD operations.</p>
 
-            <a href="employee-attendance-system.html" class="view-btn">
+            <a href="#" class="view-btn" data-case="employee-attendance">
                 View Case Study <i class="ri-arrow-right-line"></i>
             </a>
         </div>
 
         <!-- 3. Diabetes Prediction Web App -->
         <div class="case-box">
-            <img src="https://via.placeholder.com/450x280" alt="Diabetes Prediction">
+            <img src="assets/images/Diabetes-Prediction.png" alt="Diabetes Prediction">
             <h2>Diabetes Prediction Web Application</h2>
             <p>A Django-based ML-powered system predicting diabetes risk from patient data.</p>
 
-            <a href="diabetes-prediction.html" class="view-btn">
+            <a href="#" class="view-btn" data-case="diabetes-prediction">
                 View Case Study <i class="ri-arrow-right-line"></i>
             </a>
         </div>
 
     </section>
 
+    <!-- CASE STUDY OVERLAY MODAL -->
+    <div class="case-overlay" id="caseOverlay">
+        <div class="case-overlay-content">
+            <span class="close-overlay">&times;</span>
+            <div class="case-overlay-body" id="caseOverlayBody">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
 
     <!-- FOOTER -->
     <footer>

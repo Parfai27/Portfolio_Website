@@ -1,0 +1,123 @@
+/* PAGE HEADER */
+.contact-header {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.contact-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-light-secondary);
+}
+
+
+/* CONTACT SECTION */
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+
+/* LEFT SIDE */
+.contact-details {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+}
+
+.contact-details h2 {
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.contact-details i {
+    margin-right: 8px;
+    color: var(--accent);
+}
+
+.contact-social {
+    margin-top: 20px;
+}
+
+.contact-social a {
+    font-size: 22px;
+    margin-right: 14px;
+}
+
+
+/* CONTACT FORM */
+.contact-form {
+    background: var(--card-bg);
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 15px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--input-bg);
+    color: var(--text);
+    font-size: 16px;
+}
+
+.input-group textarea {
+    height: 140px;
+    resize: none;
+}
+
+.submit-btn {
+    background: var(--accent);
+    color: #fff;
+    padding: 14px 20px;
+    font-size: 17px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+}
