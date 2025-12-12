@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,43 +19,43 @@
 
     <!-- NAVBAR -->
     <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="case-studies.html">Case Studies</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Get In Touch</a></li>
-    </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="case-studies.html">Case Studies</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Get In Touch</a></li>
+        </ul>
 
-    <div class="social">
-        <a href="#"><i class="ri-linkedin-fill"></i></a>
-        <a href="#"><i class="ri-behance-fill"></i></a>
-        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <div class="social">
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+            <a href="#"><i class="ri-behance-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+        </div>
+
+        <!-- DARK/LIGHT MODE BUTTON -->
+        <div class="theme-toggle" onclick="toggleMode()">
+            <i class="ri-sun-line" id="sun"></i>
+            <i class="ri-moon-line" id="moon"></i>
+        </div>
+    </nav>
+
+
+    <div class="mobile-menu" id="mobileMenu">
+        <span class="close-menu">&times;</span>
+
+        <a href="index.html">Home</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Get In Touch</a>
+
+        <div class="mobile-socials">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-behance"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
     </div>
-
-    <!-- DARK/LIGHT MODE BUTTON -->
-    <div class="theme-toggle" onclick="toggleMode()">
-        <i class="ri-sun-line" id="sun"></i>
-        <i class="ri-moon-line" id="moon"></i>
-    </div>
-</nav>
-
-
-<div class="mobile-menu" id="mobileMenu">
-    <span class="close-menu">&times;</span>
-
-    <a href="index.html">Home</a>
-    <a href="case-studies.html">Case Studies</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Get In Touch</a>
-
-    <div class="mobile-socials">
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#"><i class="fa-brands fa-behance"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-    </div>
-</div>
 
 
 
@@ -101,6 +102,30 @@
             </a>
         </div>
 
+        <!-- 4. Personal Finance Tracker -->
+        <div class="case-box">
+            <img src="assets/images/finance-tracker.png" alt="Personal Finance Tracker">
+            <h2>Personal Finance Tracker</h2>
+            <p>A modern real-time web application for tracking income, expenses, and visualizing spending patterns with
+                interactive charts.</p>
+
+            <a href="#" class="view-btn" data-case="finance-tracker">
+                View Case Study <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
+
+        <!-- 5. My StudyPlan -->
+        <div class="case-box">
+            <img src="assets/images/study-plan.png" alt="My StudyPlan">
+            <h2>My StudyPlan</h2>
+            <p>A lightweight web-based study planner that helps students organize study sessions, track progress, and
+                stay consistent with their learning goals.</p>
+
+            <a href="#" class="view-btn" data-case="study-plan">
+                View Case Study <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
+
     </section>
 
     <!-- CASE STUDY OVERLAY MODAL -->
@@ -112,7 +137,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <!-- FOOTER -->
     <footer>
@@ -128,4 +153,5 @@
     <script defer src="assets/js/global.js"></script>
     <script src="assets/js/case-studies.js"></script>
 </body>
+
 </html>

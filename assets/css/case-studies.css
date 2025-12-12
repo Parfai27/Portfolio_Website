@@ -187,6 +187,64 @@
     font-weight: 500;
 }
 
+/* Challenge Items */
+.challenge-item {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.challenge-item:last-child {
+    margin-bottom: 0;
+}
+
+.challenge-item h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.challenge-item p {
+    color: var(--subtext);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Section heading icons */
+.case-details h3 i {
+    margin-right: 8px;
+    color: var(--accent);
+}
+
+/* Features list styling */
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.features-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 18px;
+}
+
 @media (max-width: 768px) {
     .case-overlay-content {
         margin: 20px;
