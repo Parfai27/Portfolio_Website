@@ -15,6 +15,7 @@
 - **HTML5** - Semantic structure
 - **CSS3** - Variables, flexbox, responsive design
 - **JavaScript** - Theme toggle functionality
+- **Three.js** - Animated 3D hero scene (`assets/js/hero-3d.js`), loaded from a CDN; respects reduced-motion and falls back to the 2D design without WebGL
 
 ### 📱 **Responsive Design**
 - Mobile: < 600px
